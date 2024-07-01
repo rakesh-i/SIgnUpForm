@@ -1,3 +1,11 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
 .rows{
     display: flex;
     gap:100px;
@@ -30,5 +38,34 @@ input:focus:valid{
 #error{
     color: #CF001F;
 }
+.right{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F9FAFB;
+   
+}
 
+#header{
+    font-size: 24px;
+}
 
+.middle{
+    background-color: #ffffff;
+    padding:16px;
+    /* box-shadow: 0 3px 3px rgb(0 0 0 / 0.2); */
+    margin: 0;
+}
+
+.last{
+    padding: 16px;
+}
+
+.left{
+    width: 500px;
+}
+
+img{
+    height: 100vh;   
+}
