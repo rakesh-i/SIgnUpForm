@@ -1,0 +1,34 @@
+.rows{
+    display: flex;
+    gap:100px;
+}
+
+.entry{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+input{
+    font-size: large;
+    border: 1px solid #E5E6EB;
+    border-radius: 2px;
+    padding: 5px 5px 5px 10px;
+}
+input:focus{
+    outline: 0;
+}
+
+input:focus:invalid{
+    border-color: #CB0009;
+}
+
+input:focus:valid{
+    border-color: #4400D7;
+}
+
+#error{
+    color: #CF001F;
+}
+
+

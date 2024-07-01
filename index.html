@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUpForm</title>
+</head>
+<body>
+    <div >
+        <form action="" id="info">
+            <div class="rows">
+                <div class="entry">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div class="entry">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="entry">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="entry">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="number" name="phone" id="phone" required>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="entry">
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" minlength="8" name="pwd" id="pwd" required>
+                </div>
+                <div class="entry">
+                    <label for="conf-pwd">CONFIRM PASSWORD</label>
+                    <input type="password" minlength="8" name="conf-pwd" id="conf-pwd" required>
+                    <div id="error">*Password do not match</div>
+                </div>
+            </div>
+            <div>
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
