@@ -8,61 +8,67 @@
 </head>
 <body>
     <div class="left">
-        <img src="media/halie-west-25xggax4bSA-unsplash.jpg" alt="">
-        <div>
-            
+        <div class="logo">
+            <img src="media/odin-lined.png" alt="">
+            <p>ODIN</p>
+        </div>
+        <div class="credits">
+            <p>Photo by <a href="">Halle West</a> on <a href="">Upsplash</a></p>
         </div>
     </div>
-    <div class="right">
-        <div class="first">
-            <p>This is not a real online service! You know you need some thing like this in your life to help you realize your deepest dreames. Sign up <em>now</em> to get started.</p>
-            
-            <p>You <em>know</em> you want to.</p>
-        </div>
-        <div class="middle">
-            <div>
-                <p id="header"> Let's do this!</p>
+    <div class="right-container">
+        <div class="right">
+            <div class="first child">
+                <p>This is not a real online service! You know you need some thing like this in your life to help you realize your deepest dreames. Sign up <em>now</em> to get started.</p>
+                
+                <p>You <em>know</em> you want to.</p>
             </div>
-            <form action="" id="info">
-                <div class="rows">
-                    <div class="entry">
-                        <label for="firstname">FIRST NAME</label>
-                        <input type="text" name="firstname" id="firstname" required>
-                    </div>
-                    <div class="entry">
-                        <label for="lastname">LAST NAME</label>
-                        <input type="text" name="lastname" id="lastname" required>
-                    </div>
+            <div class="middle child" >
+                <div>
+                    <p id="header"> Let's do this!</p>
                 </div>
-                <div class="rows">
-                    <div class="entry">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" required>
+                <form action="" id="info" >
+                    <div class="rows" >
+                        <div class="entry">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" name="firstname" id="firstname" required>
+                        </div>
+                        <div class="entry">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" name="lastname" id="lastname" required>
+                        </div>
                     </div>
-                    <div class="entry">
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="number" name="phone" id="phone" required>
+                    <div class="rows">
+                        <div class="entry">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="entry">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="number" name="phone" id="phone" required>
+                        </div>
                     </div>
+                    <div class="rows" >
+                        <div class="entry">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" minlength="8" name="pwd" id="pwd" required>
+                        </div>
+                        <div class="entry">
+                            <label for="conf-pwd">CONFIRM PASSWORD</label>
+                            <input type="password" minlength="8" name="conf-pwd" id="conf-pwd" required>
+                            <div id="error">*Passwords do not match</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="last child" >
+                <button id="submitButton" form="info" value="update" >Create Account</button>
+                <div id="login">
+                    <p>Already have an account? <a href="">Log in</a></p>
                 </div>
-                <div class="rows">
-                    <div class="entry">
-                        <label for="pwd">PASSWORD</label>
-                        <input type="password" minlength="8" name="pwd" id="pwd" required>
-                    </div>
-                    <div class="entry">
-                        <label for="conf-pwd">CONFIRM PASSWORD</label>
-                        <input type="password" minlength="8" name="conf-pwd" id="conf-pwd" required>
-                        <div id="error">*Passwords do not match</div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="last">
-            <button id="submitButton" form="info" value="update" >Submit</button>
-            <div id="login">
-                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
+        
     </div>
     
 </body>
